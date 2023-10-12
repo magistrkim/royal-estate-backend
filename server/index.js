@@ -1,9 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-// l1iV9rLIwysk5Fpc
-// mongodb+srv://magistrkim:<password>@royal-estate.pryvmxl.mongodb.net/
-// localhost:27017
+
 
 dotenv.config();
 
