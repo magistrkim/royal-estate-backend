@@ -1,9 +1,10 @@
 import express from "express";
-import { updateUser } from "../controllers/user/index.js";
+import { updateUser, deleteUser } from "../controllers/user/index.js";
 import { verifyUser } from "../helpers/index.js";
 
 const userRouter = express.Router();
 
 userRouter.post("/update/:id", verifyUser, updateUser);
+userRouter.delete("/delete/:id", verifyUser, deleteUser);
 
 export default userRouter;
